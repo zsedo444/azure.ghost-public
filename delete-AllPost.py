@@ -11,11 +11,11 @@ from automationassets import AutomationAssetNotFound
 
 # get a credential
 #key = str(sys.argv[1])
-key = automationassets.get_automation_variable("test-variable")
+key = automationassets.get_automation_variable('adminAPIKey')
 
 # get admin API URL
 #uri = str(sys.argv[2])
-uri = automationassets.get_automation_variable("test-variable")
+uri = automationassets.get_automation_variable('uri')
 url = "https://" + uri + "/ghost/api/v3/admin/posts/"
 
 # Split the key into ID and SECRET
