@@ -7,11 +7,10 @@ import automationassets
 from automationassets import AutomationAssetNotFound
 #Parameters should be added in the following order
 #API admin Key (eg. 6193ae96f1cf7d0001136164:f5ca17b77eb13136f7476444ac96b992464cbdf1dd9e40933b8eaec03c0b7b24)
-#Ghost uri (eg. ghost-fd-5wzc7vgv7jnhm.azurefd.net)
 
 # get a credential
-#key = str(sys.argv[1])
-key = automationassets.get_automation_variable('adminAPIKey')
+key = str(sys.argv[1])
+#key = automationassets.get_automation_variable('adminAPIKey')
 
 # get admin API URL
 #uri = str(sys.argv[2])
